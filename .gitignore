@@ -1,0 +1,5 @@
+config.json
+.claude
+.ENV
+venv
+.idea

@@ -1,0 +1,240 @@
+{
+  "prompts_config": {
+    "OPERATION": {
+      "prompt": "Décris l'opération d'investissement d'EODEN dans le groupe Wallon « Reno Energy » : montant investi, pourcentage acquis, structure de l'opération et détails de la transaction.",
+      "instructions": "Génère un résumé complet de l'opération d'investissement. Inclus tous les éléments disponibles : montants, pourcentages, modalités, conditions, calendrier et contexte stratégique de cette acquisition."
+    },
+    "PRESENTATION": {
+      "prompt": "Présente le profil complet de Reno Energy : historique, modèle économique, activités principales, segments de clientèle et positionnement géographique.",
+      "instructions": "Structure la réponse en 4 sections distinctes : 1) Historique et modèle économique 2) Activités et expertises 3) Clientèle cible 4) Implantation géographique et positionnement concurrentiel. Sois factuel et synthétique."
+    },
+    "ORGANIGRAME": {
+      "prompt":  "Pour l'entreprise {NOM_ENTREPRISE}, analyse les différentes societe qui ont été acquise par {NOM_ENTREPRISE} et qui sont toujours actives. Ta réponse doit être structurée comme suit :\n\n1. **Liste des sociétés acquises :** Dresse la liste des sociétés qui ont été acquises par {NOM_ENTREPRISE} et qui sont encore actives, en précisant leur nom et leur domaine d'activité.\n2. **Structure de détention :** Pour chaque société, indique le pourcentage de détention de {NOM_ENTREPRISE} dans celle-ci.\n3. **Rôle dans l'organisation :** Décris brièvement le rôle ou la fonction de chaque société au sein du groupe {NOM_ENTREPRISE}.",
+      "instructions": "Structure claire avec les entités principales et les pourcentages de détention si disponibles."
+    },
+    "CHIFFRE_CLES": {
+      "prompt": "Quels sont les chiffres clés de {NOM_ENTREPRISE} ? Inclus le chiffre d'affaires, l'EBITDA, le résultat net, les effectifs, et autres métriques importantes sur les dernières années.",
+      "instructions": "Présente les réulstats en étant le plus concis et précis possible, ne détaille pas avec des paragraphes, ne donne même pas d'introduction du devras direcement donner le résultat. Chaque résultat commenceras par un tirret, un espace, le résultat et enfin retour a la ligne"
+    },
+    "CADRE_LEGISLATIF": {
+      "prompt": "Analyse le cadre législatif et réglementaire impactant le secteur de l'entreprise {NOM_ENTREPRISE} surtout dans la ou les zones géogrpahique dans laquelle l'entreprise évolue. Ta réponse doit être structurée comme suit :\\n\\n1.  **Évolutions défavorables :** Décris les changements réglementaires ou la fin de dispositifs qui ont un impact négatif sur certains segments d'activité, en précisant leur périmètre géographique et leur date d'application.\\n2.  **Évolutions favorables :** Détaille les nouvelles obligations ou les aides financières (subventions, TVA réduite) qui créent des opportunités de marché.\\n3.  **Impact par segment :** Spécifie clairement quels segments de marché sont positivement ou négativement affectés par ces différentes évolutions.",
+      "instructions": "Focus sur les réglementations clés et les évolutions récentes ou à venir qui impactent le business. Si tu ne trouves pas d'informations n'en créé pas. Il faudra que chaquun de tes points commencent par un tiret, espace, contenu puis un retour a la ligne. Le contenu sera un paragraphe précis et en deux phrases maximum. Ne donne pas de titre ou de phrase d'introduction. "
+    },
+    "HISTORIQUE": {
+      "prompt": "Retrace l'historique de {NOM_ENTREPRISE} : création, étapes de développement, évolutions importantes, acquisitions ou partenariats marquants, et croissance de l'entreprise.",
+      "instructions": "Chronologie claire avec les dates importantes et les étapes de développement clés. TU feras une petite phrase d'introction puis tu commenceras ensuite avec 'Quelques dates importantes' et tu enumeras en commencant par un tirrer, espace, une date, deux poitns (:), un espace et l'inforamtions de cette date. L'information doit ête une phrase assez courte en une ligne ou deux."
+    },
+    "DIFFERENTES_ACTIVITES": {
+      "prompt": "Pour l'entreprise {NOM_ENTREPRISE}, décris sa structure opérationnelle et sa réorientation stratégique. Ta réponse doit inclure les points suivants :\\n\\n1.  **Structure opérationnelle :** Liste les principaux pôles d'activité, leurs fonctions spécifiques et leur contribution respective au chiffre d'affaires.\\n2.  **Gouvernance et Management :** Précise la structure organisationnelle (ex: matricielle) mise en place pour piloter ces pôles.\\n3.  **Ancien vs. Nouveau Modèle :** Décris le modèle d'affaires historique de l'entreprise (marchés, clients cibles, type de buniess (ex: B2B, B2C ...) et la nouvelle stratégie vers laquelle elle se dirige.\\n4.  **Raison de la transformation :** Explique les raisons de ce changement stratégique, notamment les perturbations sur son marché d'origine et la recherche de marchés à plus forte valeur ajoutée.",
+      "instructions": "Tu dois trouver les différents pôle d'activités majeurs de l'entreprise."
+    },
+    "ACTIVITE": {
+      "prompt": "Quelle est la première activité principale de {NOM_ENTREPRISE} ? Identifie le nom/type de cette activité métier.",
+      "instructions": "Réponds uniquement par le nom de l'activité (ex: 'Installation photovoltaïque', 'Conseil énergétique', etc.)"
+    },
+    "PAR_ACTIVITE": {
+      "prompt" : "Pour l'entreprise {NOM_ENTREPRISE}, analyse en détail le pôle d'activité {DYNAMIQUE}. Ta réponse doit être structurée comme suit :\\n\\n1.  **Offre et Cibles :** Liste les services ou produits proposés par ce pôle et précise les segments de marché cibles pour chacun (B2C, B2B, B2G, etc.). Mentionne la structure de direction du pôle.\\n2.  **Stratégie par Segment :** Compare la stratégie pour les principaux segments (ex: B2C vs. B2B). Détaille l'approche marketing, la méthode d'acquisition des leads, la complexité des cycles de vente et la proposition de valeur pour chaque segment.\\n3.  **Défis et Opportunités :** Identifie les principaux défis (ex: notoriété, concurrence) et les leviers de croissance spécifiques à ce pôle.\\n4.  **Indicateurs de Performance (KPIs) :** Présente les principaux KPIs opérationnels ou les chiffres clés d'activité disponibles pour une année de référence {ANNEE_REFERENCE}.",
+      "instructions": "Description complète et structurée de cette ligne d'activité avec les éléments financiers si disponibles."
+    },
+    "PARTENARIATS": {
+      "prompt": "Quels sont les partenariats stratégiques de {NOM_ENTREPRISE} ? Identifie les partenaires clés, la nature des partenariats, et leur importance pour le développement de l'entreprise.",
+      "instructions": "Liste les partenariats principaux avec leur apport stratégique et leur impact sur l'activité."
+    },
+    "EQUIPE": {
+      "prompt": "Décris l'équipe et l'organisation de {NOM_ENTREPRISE} : structure organisationnelle, effectifs, compétences clés, et organisation des équipes par activité.",
+      "instructions": "Focus sur la structure et les compétences, sans donner de noms spécifiques dans cette section."
+    },
+    "IMG_ORGA": {
+      "prompt": "Décris l'organigramme opérationnel de {NOM_ENTREPRISE} : structure hiérarchique, départements, répartition des équipes et organisation fonctionnelle.",
+      "instructions": "Description textuelle de l'organisation qui pourrait accompagner un schéma organisationnel."
+    },
+    "PERSONNE_CLE": {
+      "prompt": "Qui sont les personnes clés de {NOM_ENTREPRISE} ? Identifie les dirigeants, leurs rôles, leurs expériences et leurs contributions essentielles à l'entreprise.",
+      "instructions": "Profils des personnes clés avec leurs expertises et leurs responsabilités principales."
+    },
+    "MARCHE": {
+      "prompt": "Quel est le premier marché principal sur lequel opère {NOM_ENTREPRISE} ? Identifie le segment de marché ou le secteur d'activité.",
+      "instructions": "Nom du marché/segment uniquement (ex: 'Marché du photovoltaïque résidentiel', 'Efficacité énergétique industrielle', etc.)"
+    },
+    "PAR_MARCHE": {
+      "prompt": "Pour le {DYNAMIQUE} de {NOM_ENTREPRISE}, réalise une analyse complète de son marché. Ta réponse doit être structurée comme suit :\n\n1. Taille, croissance et potentiel du marché : Évalue la taille du marché, sa dynamique de croissance et son potentiel de développement. Mentionne les chiffres clés ou les comparaisons pertinentes (ex: par habitant, par région) qui illustrent ce potentiel.\n2. Environnement réglementaire et aides publiques : Décris l'impact des facteurs réglementaires, fiscaux (ex: TVA) et des subventions sur le marché. Explique comment les changements récents ou à venir affectent la demande et la rentabilité du secteur.\n3. Segmentation et dynamiques régionales : Analyse les différents segments du marché (ex: B2C, B2B, B2G) et leurs évolutions respectives. Mets en évidence les disparités régionales ou nationales en termes de maturité, de pouvoir d'achat ou de réglementation.\n4. Facteurs clés de succès et paysage concurrentiel : Identifie les principaux moteurs et freins du marché (ex: coût des alternatives, facteurs administratifs, accès aux infrastructures). Décris la maturité et l'intensité de la concurrence.\n5. Synthèse des opportunités et des risques pour l'acquéreur : Résume les principales opportunités (ex: marché en rattrapage) et les menaces (ex: instabilité réglementaire) que présente ce marché pour un acteur comme {NOM_ENTREPRISE} et pour {NOUS} en tant qu'investisseur.",
+      "instructions": "Analyse de marché complète avec données chiffrées si disponibles et positionnement concurrentiel."
+    },
+    "CONCURENCE": {
+      "prompt": "Quelle est la concurrence de {NOM_ENTREPRISE} ? Identifie les concurrents principaux, leur positionnement, leurs forces/faiblesses et la différenciation de {NOM_ENTREPRISE}. Identifie les différents poles de l'entreprise et tu énumeraras les différents concurent et présentant l'entreprise en question.",
+      "instructions": "Analyse concurrentielle structurée avec les acteurs clés et les éléments de différenciation de {NOM_ENTREPRISE}."
+    },
+    "CHIFFRE_AFFAIRES": {
+      "prompt": "Pour l'entreprise {NOM_ENTREPRISE}, analyse la performance de son chiffre d'affaires pour l'exercice {PERIODE_ANALYSE_ANNEE_1}. Ta réponse doit inclure les points suivants en se basant sur les données disponibles :\\n1.  **Évolution du chiffre d'affaires :** Indique le montant du chiffre d'affaires pour l'année {PERIODE_ANALYSE_ANNEE_1} et sa variation (en pourcentage et en tendance) par rapport à 2023.**\\n2.  **Principaux facteurs d'influence :** Détaille les raisons principales expliquant cette évolution. Précise les divisions, produits ou segments de marché (ex: B2C, B2B) qui ont le plus contribué, positivement ou négativement.\\n3.  **Contexte du marché :** Si l'information est disponible, compare la performance de l'entreprise à celle de son marché ou de ses concurrents sur la même période.\\n4.  **Stratégies de réponse :** Décris les actions, redéploiements ou stratégies que l'entreprise a mis en place pour s'adapter à la situation ou pour compenser une baisse d'activité.\\n5.  **Perspectives futures :** Mentionne tout projet ou contrat significatif signé durant l'année {PERIODE_ANALYSE_ANNEE_1} dont l'impact financier est attendu sur les exercices futurs.",
+      "instructions": "Analyse du chiffre d'affaires en essayant de le faire en deux paragraphes d'environ 10 lignes maximum chacun, si tu peux le faire en plus court tant mieux."
+    },
+    "MARGE_BRUTE": {
+      "prompt": "Pour l'entreprise {NOM_ENTREPRISE}, analyse l'évolution de son taux de marge brute sur la période {PERIODE_ANALYSE_1}. Ta réponse doit couvrir les points suivants :\\n\\n1.  **Tendance :** Décris l'évolution du taux de marge brute (hausse, baisse, stabilité) et précise, si possible, l'ampleur de la variation.\\n2.  **Hypothèses d'explication :** Liste les raisons potentielles suggérées pour cette tendance (ex: maîtrise des coûts, mix produit, politique de prix).\\n3.  **Limites de l'analyse :** Mentionne explicitement toute absence de données qui empêcherait une analyse plus approfondie ou la confirmation des hypothèses.",
+      "instructions": "Analyse la marge brut en essayant de le faire en deux paragraphes d'environ 10 lignes maximum chacun, si tu peux le faire en plus court tant mieux."
+    },
+    "FRAIS_GENERAUX": {
+      "prompt": "Pour l'entreprise {NOM_ENTREPRISE}, analyse l'évolution de ses frais généraux sur la période {PERIODE_ANALYSE_1}. Ta réponse doit être structurée comme suit :\\n\\n1.  **Composition principale :** Liste les postes de coûts majeurs qui composent les frais généraux, en précisant leur poids relatif si l'information est disponible.\\n2.  **Tendance générale :** Indique la tendance d'évolution de ces frais (hausse ou baisse) et son rythme moyen sur la période.\\n3.  **Facteurs explicatifs détaillés :** Pour chaque cause de variation, décris précisément le facteur (ex: personnel, management, coûts opérationnels, marketing) et la raison de son impact.",
+      "instructions": "Analyse de frais généraux en essayant quand tu vas énumérer les frais essaye de les faire en mode bullet point et une phrase ou deux maximum par frais."
+    },
+    "FRAIS_PERSONNEL": {
+      "prompt": "Pour l'entreprise {NOM_ENTREPRISE}, analyse l'évolution de ses frais de personnel sur la période {PERIODE_ANALYSE_1}. Ta réponse doit inclure les points suivants :\\n\\n1.  **Périmètre des coûts :** Décris les types de fonctions et d'équipes (opérationnelles, administratives, etc.) dont les salaires sont inclus dans les frais de personnel.\\n2.  **Tendance d'évolution :** Indique le taux de croissance annuel moyen des frais de personnel sur la période analysée.\\n3.  **Principaux facteurs :** Détaille les facteurs internes (comme la croissance des effectifs ou les acquisitions) et externes (comme le contexte économique) qui expliquent cette évolution.",
+      "instructions": "Analyse de frais de personnel en essayant de le faire en deux paragraphes d'environ 10 lignes maximum chacun, si tu peux le faire en plus court tant mieux."
+    },
+    "CONCLUSION": {
+      "prompt": "Pour l'entreprise {NOM_ENTREPRISE}, décris les actions stratégiques, organisationnelles et de développement menées durant l'année {PERIODE_ANALYSE_ANNEE_1}, présentée comme une année charnière. Ta réponse doit couvrir les points suivants :\\n\\n1.  **Restructuration interne :** Détaille les changements organisationnels, managériaux et juridiques mis en place pour professionnaliser l'entreprise.\\n2.  **Gestion des risques et efficacité :** Mentionne les initiatives liées à l'identification des risques et à l'amélioration de l'efficacité opérationnelle.\\n3.  **Innovation et développement de l'offre :** Liste les nouveaux produits, services ou projets innovants lancés ou étudiés.\\n4.  **Stratégie de croissance :** Décris les actions de croissance externe (acquisitions, intégrations) et les partenariats stratégiques conclus ou étudiés.\\n5.  **Perspectives de croissance future :** Indique tout projet d'acquisition ou partenariat majeur en cours de discussion pour les années à venir.",
+      "instructions": "Un petit texte d'un paragraphe sur la situation puis un focs sur les differents travaux effectué que tu énumereras avec a chaque fois un tirret, un espace, le travail et puis un retour à la ligne. Ne définit pas de conclusion après avoir énuméré les travaux."
+    },
+    "BP_MANAGEMENT": {
+      "prompt": "Pour l'entreprise {NOM_ENTREPRISE}, analyse les projections et la stratégie présentées par le management sur la période {PERIODE_ANALYSE_FUTUR_2}. Ta réponse doit être structurée comme suit :\\n\\n1.  **Nature et Limites des Projections :** Décris le niveau de détail du business plan fourni par le management. Précise quelles données financières sont disponibles et lesquelles sont manquantes.\\n2.  **Stratégie d'Acquisition :** Explique la stratégie de croissance externe. Précise quel est le pôle d'activité prioritaire pour les acquisitions et mentionne les autres segments où des opportunités sont envisagées.\\n3.  **Objectifs à Long Terme :** Indique les objectifs financiers finaux (chiffre d'affaires et marge d'EBITDA) fixés par le management pour la derniere année.",
+      "instructions": "L'anayse d'un business plan côté management de l'entreprise sur une période donnée doit être fait en un paragrpahe de maximum 10 lignes."
+    },
+    "BP_EODEN": {
+      "prompt": "Analyse le niveau de confiance et les fondations du business plan de {NOM_ENTREPRISE} sur la période suivante : {PERIODE_ANALYSE_FUTUR_3}. Ta réponse doit adresser les points suivants :\\n\\n1.  **Base de préparation :** Sur quelles données et informations (données financières, échanges avec le management, etc.) l'analyse du business plan est-elle fondée ?\\n2.  **Limites et difficultés :** Quelles sont les limitations ou difficultés mentionnées dans l'exercice de projection (ex: manque de données, transformation du modèle) ?\\n3.  **Évaluation de la crédibilité :** Quelle est la conclusion générale sur la crédibilité des objectifs financiers principaux (chiffre d'affaires, EBITDA) ?\\n4.  **Conditions de succès :** La crédibilité des objectifs est-elle soumise à des conditions spécifiques (ex: qualité de la gestion) ?",
+      "instructions": "L'anayse d'un business plan de l'entreprise sur une période donnée doit être fait en un paragrpahe de maximum 10 lignes."
+    },
+    "BUDGET": {
+      "prompt": "Pour l'entreprise {NOM_ENTREPRISE}, analyse les projections financières pour l'année {ANNEE_ACTUEL} et le raisonnement qui les sous-tend. Ta réponse doit être structurée comme suit :\\n\\n1.  **Projections financières comparées :** Présente les projections de chiffre d'affaires et d'EBITDA pour l'année {ANNEE_ACTUEL}, en distinguant la vision de l'analyste de celle du management.\\n2.  **Moteurs de croissance :** Décris les nouveaux segments d'activité et les contrats significatifs qui soutiennent ces projections.\\n3.  **Risques et incertitudes :** Mentionne les risques ou les conditions non finalisées (comme une acquisition en attente ou des changements réglementaires) qui pourraient impacter l'atteinte de ces objectifs.\\n4.  **Position de l'analyste :** Explique pourquoi l'analyste adopte une position plus prudente que le management, en citant les raisons spécifiques (ex: maturité des systèmes, transformations en cours).",
+      "instructions": "L'anayse d'un budget de l'entreprise sur une période donnée doit être fait en une page de PDF maximum, si tu peux faire moins c'est encore mieux."
+    },
+    "CHIFFRE_AFFAIRES_BP": {
+      "prompt": "Pour l'entreprise {NOM_ENTREPRISE}, identifie et détaille les principaux moteurs de croissance prévus dans son business plan sur la période {PERIODE_ANALYSE_FUTUR}. Ta réponse doit être structurée comme suit :\\n\\n1.  **Distinction des sources de croissance :** Fais la différence entre la croissance organique et la croissance externe (acquisitions).\\n2.  **Moteurs de croissance organique :** Pour la croissance organique, liste les pôles d'activité clés qui la soutiennent. Précise pour chacun les segments de marché concernés et leur taux de croissance annuel moyen (TCAM) attendu.\\n3.  **Rôle de la croissance externe :** Mentionne l'importance des futures acquisitions comme levier de croissance.\\n4.  **Limites des projections :** Indique toute limitation ou manque de détail mentionné dans la projection, notamment concernant la répartition des acquisitions.",
+      "instructions": "L'anayse d'un chiffre d'affaire de l'entreprise sur une période donnée doit être fait en une page de PDF maximum, si tu peux faire moins c'est encore mieux."
+    },
+    "MARGE_BRUTE_BP": {
+      "prompt": "Pour l'entreprise {NOM_ENTREPRISE}, analyse l'évolution projetée du taux de marge brute sur la période du business plan {PERIODE_ANALYSE_FUTUR}. Ta réponse doit couvrir les points suivants :\\n\\n1.  **Tendance projetée :** Décris l'évolution attendue du taux de marge brute (hausse, baisse) et précise l'ampleur de la variation sur la période.\\n2.  **Raison stratégique principale :** Quelle est la raison fondamentale expliquant cette tendance, notamment en ce qui concerne l'évolution du modèle d'affaires de l'entreprise ?\\n3.  **Facteur explicatif détaillé :** Précise quel segment de marché (ex: B2B, B2C) est privilégié et comment ses caractéristiques de marge influencent la projection globale.",
+      "instructions": "L'anayse doit être faites en un paragraphe maximum."
+    },
+    "CHARGES_BP": {
+      "prompt": "Pour l'entreprise {NOM_ENTREPRISE}, analyse les hypothèses de projection pour ses principales charges opérationnelles sur la période du business plan {PERIODE_ANALYSE_FUTUR}. Ta réponse doit détailler :\\n\\n1.  **Frais généraux :** Explique la double hypothèse utilisée pour leur projection. Distingue les coûts qui suivent l'évolution du chiffre d'affaires de ceux qui ont une hypothèse de croissance annuelle fixe, en précisant leurs taux si disponibles.\\n2.  **Frais de personnel :** Décris la tendance d'augmentation attendue et les recrutements stratégiques qui la justifient. Explique l'hypothèse d'effet de levier opérationnel, en précisant comment le ratio de masse salariale sur chiffre d'affaires est projeté d'évoluer (ex: de X % à Y %).",
+      "instructions": "L'anayse des charges de l'entreprise sur une période donnée doit être fait en une page de PDF maximum, si tu peux faire moins c'est encore mieux."
+    },
+    "OPERATION_GLOBALE": {
+      "prompt": "Pour l'entreprise [Nom de l'entreprise], décris sa stratégie de croissance et le plan de financement associé. Ta réponse doit couvrir les points suivants :\\n\\n1.  **Stratégie de croissance :** Quelle est la stratégie d'expansion (ex: build-up, maillage géographique) et sur quels marchés cibles ?\\n2.  **Opération financière :** Quelle est l'opération de financement envisagée (ex: augmentation de capital) et quel est le montant recherché ?\\n3.  **Partenaires et investisseurs :** Quels types de partenaires sont recherchés ? Y a-t-il des investisseurs déjà identifiés ou confirmés ?\\n4.  **Détails de l'opération :** Mentionne tout mandat confié à des conseillers et les détails associés (nature de l'opération, frais, statut des négociations).",
+      "instructions": "L'anayse des opérations de l'entreprise doit être fait en une page de PDF maximum, si tu peux faire moins c'est encore mieux."
+    },
+    "VALORISATION_TICKET_INVESTISSEMENT": {
+      "prompt": "Dans le cadre du rachat de l'entreprise {NOM_ENTREPRISE} par {NOUS}, décris l'ajustement de la valorisation suite aux travaux de due diligence. Ta réponse doit être structurée comme suit :\\n\\n1.  **Ajustement de la valeur des titres :** Indique le montant final négocié pour la valeur des titres et compare-le à la valeur initialement prévue dans la LOI.\\n2.  **Maintien de la Valeur d'Entreprise :** Explique pourquoi la valeur d'entreprise a été maintenue, en mentionnant les mécanismes de protection (comme la relution) qui ont compensé la sous-performance constatée.\\n3.  **Justification technique :** Détaille l'ajustement financier qui a justifié la baisse de la valeur des titres, en précisant le rôle de la dette financière nette et de la normalisation du BFR.",
+      "instructions": "L'anayse de la valorisation et du ticket d'investissement doit être fait en une page de PDF maximum, si tu peux faire moins c'est encore mieux."
+    },
+    "TABLEAU_EMPLOIS_RESSOURCES_TABLE_CAPITALISATION": {
+      "prompt": "Dans le cadre du rachat de l'entreprise {NOM_ENTREPRISE} par {NOUS}, décris en détail la structure de son augmentation de capital. Ta réponse doit couvrir les points suivants :\\n\\n1.  **Répartition du financement :** Liste les différents apporteurs de fonds propres et le montant de leur contribution respective pour atteindre le total de l'augmentation de capital.\\n2.  **Ajustements et négociations avec les investisseurs :** Mentionne toute négociation en cours ou modification de la participation d'un investisseur, ainsi que les clauses spécifiques (comme la non-relution) négociées avec d'autres partenaires.\\n3.  **Frais de transaction :** Indique le montant total des frais, leur composition (audit, M&A, etc.) et la méthode de répartition de ces coûts entre les parties.\\n4.  **Négociation des frais :** Explique si des frais font l'objet d'une renégociation et pour quelles raisons.",
+      "instructions": "L'anayse des ressources et de la capitalisation de l'entreprise doit être fait en une page de PDF maximum, si tu peux faire moins c'est encore mieux."
+    },
+    "MECANISME_RENDEMENT": {
+      "prompt": "Dans le cadre du rachat de l'entreprise {NOM_ENTREPRISE} par {NOUS}, décris en détail le mécanisme de protection des investisseurs (clause de TRI garanti). Ta réponse doit être structurée comme suit :\\n\\n1.  **Principe de la clause :** Quel est le TRI minimum garanti, pour quels investisseurs (ou quelle classe d'actions), et sur quelle période ?\\n2.  **Mécanisme de compensation :** Explique ce qui se passe si le TRI n'est pas atteint, en détaillant le processus d'émission d'actions nouvelles (prix, bénéficiaires).\\n3.  **Plafond du mécanisme :** Quelles sont les limites ou le plafond de ce mécanisme de compensation (ex: nombre maximum d'actions nouvelles) ?\\n4.  **Méthode de calcul :** Détaille les composantes utilisées pour calculer le TRI et la formule de la Juste Valeur Marchande (FMV) si elle est spécifiée.\\n5.  **Analyse des termes :** Mentionne tout commentaire de l'analyste concernant les conditions de la clause (ex: si elles sont favorables ou non).",
+      "instructions": "L'anayse des mécanisme de rendement préférentiel de l'entreprise doit être fait en une page de PDF maximum, si tu peux faire moins c'est encore mieux."
+    },
+    "ANALYSE_SENSIBILITE_PERSPECTIVES_SORTIE": {
+      "prompt": "Dans le cadre du rachat de l'entreprise {NOM_ENTREPRISE} par {NOUS}, analyse la thèse d'investissement et la projection de sortie. Ta réponse doit être structurée comme suit :\\n\\n1.  **Stratégie et Horizon de Sortie :** Décris la stratégie d'investissement (ex: growth) et l'horizon de sortie estimé, en expliquant les raisons de ce délai.\\n2.  **Méthodologie de Valorisation :** Explique la méthode utilisée pour l'analyse de sensibilité (variables testées, fourchettes de multiples et d'EBITDA) et les principales hypothèses de simplification (cash-flows, croissance). \\n3.  **Impact sur la Structure Actionnariale :** Détaille l'évolution de la participation de l'investisseur, en distinguant la part non diluée, la part entièrement diluée (après exercice des options), et l'impact potentiel des mécanismes de relution.\\n4.  **Exclusions de l'Analyse :** Mentionne explicitement tout mécanisme ou droit (comme un droit préférentiel d'exit) qui n'est pas inclus dans le calcul principal du tableau de sensibilité.\\n5.  **Résultat Final Projeté :** Indique le TRI et la plus-value attendus pour l'investisseur selon le scénario central, à l'horizon de sortie spécifié.",
+      "instructions": "L'anayse des perspectives de sorties de l'entreprise doit être fait en une page de PDF maximum, si tu peux faire moins c'est encore mieux."
+    },
+    "MODALITES_ESSENTIELLES_PACTE_SPA": {
+      "prompt": "Pour l'investissement dans {NOM_ENTREPRISE}, décris les principaux engagements et clauses négociés dans le pacte d'actionnaires. Ta réponse doit être structurée comme suit, en précisant le statut des discussions pour chaque point si l'information est disponible :\\n\\n1.  **Engagements Financiers :** Détaille les règles concernant l'utilisation des fonds levés et la politique de distribution de dividendes.\\n2.  **Mécanismes d'Intéressement :** Explique la structure du plan de stock-options et du management package prévus pour l'équipe de direction.\\n3.  **Clauses de Protection des Investisseurs :** Décris le mécanisme d'indemnisation (type GAP) et les clauses anti-dilution (droit préférentiel de souscription, ratchet).\\n4.  **Mécanismes de Liquidité :** Détaille les règles de sortie, incluant le droit préférentiel d'exit, la sortie forcée (drag-along) et le droit de première offre.\\n5.  **Gouvernance :** Résume les principes de gouvernance, notamment la composition du conseil d'administration, les droits de vote, les droits de veto et la gestion quotidienne.",
+      "instructions": "L'anayse des modalités essentielles du pacte et du SPA de l'entreprise doit être fait en une page de PDF maximum, si tu peux faire moins c'est encore mieux."
+    },
+    "SWOT_FORCES": {
+      "prompt": "Pour l'entreprise {NOM_ENTREPRISE}, analyse ses principaux atouts et forces concurrentielles. Ta réponse doit être structurée autour des points suivants :\\n\\n1.  **Équipe de direction :** Décris la complémentarité, l'expérience et les compétences spécifiques (comme l'intégration d'acquisitions) de l'équipe dirigeante.\\n2.  **Différenciation et expertise :** Explique les facteurs de différenciation clés de l'entreprise, notamment son ADN (technique, commercial, etc.) et son expertise interne.\\n3.  **Positionnement Marché :** Analyse comment la performance de l'entreprise sur ses marchés historiques démontre sa résilience et sa préparation pour de nouveaux marchés.\\n4.  **Crédibilité et Réputation :** Liste les éléments qui établissent la crédibilité de l'entreprise, tels que son expérience, ses parts de marché ou la force de sa marque.\\n5.  **Maîtrise de la chaîne de valeur :** Explique en quoi son approche multi-métiers ou sa maîtrise de la chaîne de valeur constitue une force.",
+      "instructions": "Redaction d'un SWOT, focus sur les forces de l'entreprise doit être fait en bullet point, chacun de une ou deux phrases maximum. N'écris pas de texte en préambule ou de titres, je veux unqiuement les éléments qui commence avec un tirret et un espace puis le contenu et tu sautes une ligne pour donner le possible suivant point."
+    },
+    "SWOT_FAIBLESSES": {
+      "prompt": "Pour l'entreprise {NOM_ENTREPRISE}, analyse les principaux risques, faiblesses et défis identifiés. Ta réponse doit être structurée comme suit :\\n\\n1.  **Défis Opérationnels et Internes :** Décris les chantiers de restructuration en cours et leur impact potentiel, ainsi que les risques liés à la structure organisationnelle et à la sécurisation des contrats.\\n2.  **Risques Financiers et du Modèle d'Affaires :** Explique les défis liés au modèle de revenus (ex: faible récurrence) et à la gestion financière, notamment l'impact de la croissance sur le besoin en fonds de roulement (BFR).\\n3.  **Risques de Gouvernance :** Précise les risques liés à la structure de l'actionnariat et à la capacité d'influence de l'investisseur.\\n4.  **Risques Externes et Réglementaires :** Décris la dépendance de l'entreprise à des facteurs externes comme les réglementations ou les aides gouvernementales.",
+      "instructions": "Redaction d'un SWOT, focus sur les faiblesses de l'entreprise doit être fait en bullet point, chacun de une ou deux phrases maximum. N'écris pas de texte en préambule ou de titres, je veux unqiuement les éléments qui commence avec un tirret et un espace puis le contenu et tu sautes une ligne pour donner le possible suivant point."
+    },
+    "SWOT_OPPORTUNITES": {
+      "prompt": "Pour l'entreprise {NOM_ENTREPRISE}, analyse ses principales opportunités de croissance et de marché. Ta réponse doit être structurée autour des points suivants :\\n\\n1.  **Stratégie d'expansion :** Décris le plan de croissance par acquisition et le développement géographique envisagé.\\n2.  **Positionnement sur des marchés à forte valeur :** Détaille les caractéristiques d'un marché spécifique (comme la rénovation complexe) où l'entreprise est bien positionnée et explique pourquoi il représente une opportunité (barrières à l'entrée, concurrence, etc.).\\n3.  **Agilité et innovation :** Explique comment la capacité de l'entreprise à s'adapter et à anticiper les évolutions du marché (ex: nouveaux services, applications) crée des relais de croissance.\\n4.  **Valorisation des actifs existants :** Mentionne comment l'entreprise peut exploiter ses atouts, comme sa base de clients, pour générer des revenus additionnels (cross-selling).\\n5.  **Tendances macro-économiques favorables :** Décris les tendances de fond du marché (ex: prix de l'énergie) qui soutiennent le modèle d'affaires de l'entreprise.",
+      "instructions": "Redaction d'un SWOT, focus sur les opportuntiées de l'entreprise doit être fait en bullet point, chacun de une ou deux phrases maximum. N'écris pas de texte en préambule ou de titres, je veux unqiuement les éléments qui commence avec un tirret et un espace puis le contenu et tu sautes une ligne pour donner le possible suivant point."
+    },
+    "SWOT_MENACES": {
+      "prompt": "Pour l'entreprise {NOM_ENTREPRISE}, analyse les principales menaces et les défis liés à sa transformation stratégique. Ta réponse doit être structurée comme suit :\\n\\n1.  **Dépendance au marché historique :** Explique le défi que représente la nécessité de prouver sa capacité à réussir sur de nouveaux marchés, au-delà de son marché historique.\\n2.  **Incertitude du marché d'origine :** Décris les perspectives du marché historique de l'entreprise et les raisons pour lesquelles sa reprise est jugée incertaine.\\n3.  **Risques de la transformation :** Détaille les risques internes (techniques, organisationnels, humains) associés au rythme rapide du changement de modèle économique et à l'augmentation de la complexité des projets.",
+      "instructions": "Redaction d'un SWOT, focus sur les menaces de l'entreprise doit être fait en bullet point, chacun de une ou deux phrases maximum. N'écris pas de texte en préambule ou de titres, je veux unqiuement les éléments qui commence avec un tirret et un espace puis le contenu et tu sautes une ligne pour donner le possible suivant point."
+    },
+    "PRE_AUDIT_RSE": {
+      "prompt": "Pour l'entreprise {NOM_ENTREPRISE}, analyse son profil et sa stratégie RSE/ESG. Ta réponse doit être structurée comme suit :\\n\\n1.  **Évaluation de la maturité et des points forts :** Décris le niveau de maturité RSE de l'entreprise et les raisons de cette performance, en incluant la structure de gouvernance en place.\\n2.  **Actions et initiatives clés :** Liste les actions et projets RSE concrets déjà déployés ou en cours.\\n3.  **Faiblesses et paradoxes :** Explique les faiblesses ou les impacts négatifs inhérents au modèle économique, malgré sa contribution positive (ex: dépendances, économie extractive).\\n4.  **Pistes d'amélioration et objectifs :** Résume les recommandations pour améliorer la performance RSE et mentionne tout objectif chiffré ou ambition future (ex: score cible).\\n5.  **Rôle de l'investisseur :** Précise le rôle et l'influence attendus de {NOUS} sur la stratégie RSE de l'entreprise.",
+      "instructions": "Redaction d'un pre-audit RSE sur l'entreprise et doit être fait en une page de PDF maximum, si c'est plus court tant mieux."
+    }
+  },
+  "prompts_config_final": {
+   "INTERETS_IDENTIFIES": {
+      "prompt": "Pour l'entreprise {NOM_ENTREPRISE}, analyse son profil stratégique et ses atouts dans le cadre d'un rachat. Ta réponse doit être structurée comme suit :\n\n1. Positionnement sur le marché et stratégie : Décris sa position concurrentielle, ses parts de marché, et sa stratégie de diversification (géographique, sectorielle, par type de clientèle).\n2. Structure organisationnelle et gouvernance : Évalue la solidité de sa structure interne, la mise en place du management intermédiaire, et les processus de gouvernance et de reporting existants.\n3. Qualités du management et des dirigeants : Identifie les compétences et les réalisations clés des dirigeants mentionnés. Précise leurs contributions spécifiques à la performance et à la vision de l'entreprise.\n4. Potentiel de croissance et d'innovation : Résume l'expérience de l'entreprise en matière de croissance (notamment externe) et sa capacité à innover et à anticiper les évolutions du marché (nouveaux services, stratégies commerciales).\n5. Synthèse des atouts pour l'acquéreur : Conclus en résumant pourquoi l'entreprise représente une cible d'intérêt stratégique pour un acquéreur comme {NOUS}, en te basant sur l'ensemble des points précédents.",
+      "instructions": "Redaction d'une synthèse d'investissement sur l'entreprise et doit être fait en une page de PDF maximum, si c'est plus court tant mieux. Il ne doit pas avoir de titre ni de texte d'introduction, chaque résultat commenceras par un tirret, un espace, le résultat et enfin retour a la ligne. Chaque point doit êre écrit entre une et deux phrases."
+    },
+    "POINTS_ATTENTION": {
+      "prompt":  "Pour l'entreprise {NOM_ENTREPRISE}, analyse les risques et les points de vigilance dans le cadre de son rachat. Ta réponse doit être structurée comme suit :\n\n1. Risques stratégiques et de marché : Identifie les dépendances à des conditions de marché spécifiques (ex: subventions, réglementation) et analyse les défis liés à tout changement de modèle économique ou repositionnement stratégique (ex: passage du B2C au B2B). Évalue l'impact de ces changements sur l'ADN et la culture de l'entreprise.\n2. Risques humains et de gouvernance : Évalue la dépendance de l'entreprise envers ses dirigeants clés ('key man risk'). Mentionne les enjeux de succession, de stabilité du management à moyen/long terme, et tout facteur atténuant ce risque (ex: investissement des dirigeants).\n3. Risques financiers et opérationnels : Analyse les faiblesses financières, notamment l'absence d'historique prouvant la rentabilité du nouveau modèle. Souligne les risques liés à la trésorerie, comme l'augmentation du Besoin en Fonds de Roulement (BFR), et l'impact d'une structure de coûts fixes élevée (ex: salaires du management) sur la rentabilité future.\n4. Risques liés à la croissance et à l'expansion : Décris les défis associés à la stratégie de croissance, en particulier la croissance externe ou l'expansion géographique. Explique pourquoi les facteurs de succès dans un marché initial pourraient ne pas être transposables à de nouveaux marchés.\n5. Synthèse et rôle de l'investisseur : Résume les principaux points de vigilance pour {NOUS} en tant qu'acquéreur. Suggère les domaines où une surveillance ou un accompagnement post-acquisition sera crucial pour mitiger ces risques.",
+      "instructions": "Redaction d'une analyse des risques et des points de vigilance sur l'entreprise et doit être fait en une page de PDF maximum, si c'est plus court tant mieux. Il ne doit pas avoir de titre ni de texte d'introduction, chaque résultat commenceras par un tirret, un espace, le résultat et enfin retour a la ligne. Chaque point doit êre écrit entre une et deux phrases."
+    },
+    "AVIS_EQUIPE_FONDAMENTAUX": {
+      "prompt":  "Pour l'entreprise {NOM_ENTREPRISE}, réalise une évaluation synthétique de ses fondamentaux en vue d'une acquisition. Structure ta réponse selon les trois piliers suivants :\n\n1. Analyse du Marché : Évalue le positionnement de l'entreprise sur ses marchés. Décris la situation de son marché historique et la pertinence de son pivot stratégique vers de nouveaux segments (ex: B2B/B2G, rénovation globale). Analyse le potentiel de ces nouveaux marchés.\n2. Évaluation des Capacités Opérationnelles et de l'Organisation : Analyse la maturité de la structure interne. Décris ses processus, son organisation (ex: matricielle), ses actifs (agences, image de marque), et la qualité de ses équipes. Identifie ses atouts clés créant des barrières à l'entrée, ainsi que ses faiblesses ou points à améliorer (ex: systèmes d'information, maturité RSE).\n3. Qualité et Complémentarité du Management : Décris les profils, l'expérience et les compétences des dirigeants clés. Analyse la complémentarité de l'équipe de direction (ex: visionnaire vs. exécuteur) et leur bilan ou expérience passée en matière de croissance et d'intégration d'acquisitions.",
+      "instructions": "Redaction des fondamentaux de l'entreprise et doit être fait en une page de PDF maximum, si c'est plus court tant mieux. Cette partie doit être faites en trois parties principales, focus sur le marché, l'outils industriel, la qualitié du management. Il ne doit pas avoir de titre, chaque résultat commenceras par un tirret, un espace, le résultat et enfin retour a la ligne. Chaque point doit êre écrit entre une et deux phrases."
+    }
+  },
+  "default_settings": {
+    "max_results": 10,
+    "language": "français",
+    "response_style": "professionnel et structuré",
+    "base_instruction": "Tu es un analyste financier senior spécialisé dans les énergies renouvelables chez EODEN.\n\nCONTEXTE: Tu rédiges une note d'investissement interne sur l'acquisition de Reno Energy.\n\nSOURCES: Base-toi exclusivement sur les documents fournis. Différencie clairement les opérations EODEN des autres investisseurs.\n\nSTYLE: Professionnel, factuel, sans références ni citations. Utilise 'nous/notre' pour EODEN.\n\nFORMAT MONÉTAIRE: 1M = 1 million €, 500k = 500 000 €",
+    "base_instruction_final": "Tu es un analyste financier senior chez EODEN spécialisé dans les énergies renouvelables.\n\nCONTEXTE: Tu finalises une note d'investissement sur l'acquisition réussie de Reno Energy.\n\nSOURCES: Synthèse documentaire préalablement établie sur Reno Energy.\n\nTON: Confirmatif (acquisition finalisée). Utilise 'nous/notre' pour EODEN.\n\nFORMAT: Texte brut sans références, citations ou formatage. Montants: 1M, 500k."
+  },
+  "template_variables": {
+    "date_generation": {
+      "type": "auto",
+      "value": "current_datetime"
+    }
+  },
+  "template_dictionary": {
+    "NOUS": "EODEN",
+    "NOM_ENTREPRISE": "Reno Energy",
+    "ANNEE_ACTUEL": "2025",
+    "ANNEE_REFERENCE": "2023",
+    "PERIODE_ANALYSE_FUTUR": "2026-2029",
+    "PERIODE_ANALYSE_FUTUR_2": "2025-2029",
+    "PERIODE_ANALYSE_FUTUR_3": "2024-2030",
+    "PERIODE_ANALYSE_ANNEE_1": "2024",
+    "PERIODE_ANALYSE_1": "2022-2024",
+    "SECTEUR": "énergies Renouvelables",
+    "POLES": ["Pôle Énergie", "Pôle Construction & Rénovation", "Pôle Bureau d’études"],
+    "MARCHES": ["Le marché de la rénonvation globale", "Le marché de l'energie"]
+  },
+  "template_info": {
+    "name": "Template_Eoden.docx",
+    "variables_found": [
+      "OPERATION",
+      "PRESENTATION", 
+      "ORGANIGRAME",
+      "CHIFFRE_CLES",
+      "CADRE_LEGISLATIF",
+      "HISTORIQUE",
+      "ACTIVITE",
+      "PAR_ACTIVITE",
+      "PARTENARIATS",
+      "EQUIPE",
+      "IMG_ORGA",
+      "PERSONNE_CLE",
+      "MARCHE",
+      "PAR_MARCHE",
+      "CONCURENCE",
+      "CHIFFRE_AFFAIRES",
+      "MARGE_BRUTE",
+      "FRAIS_GENERAUX",
+      "FRAIS_PERSONNEL",
+      "CONCLUSION",
+      "BP_EODEN",
+      "BUDGET",
+      "CHIFFRE_AFFAIRES_BP",
+      "MARGE_BRUTE_BP",
+      "CHARGES_BP",
+      "OPERATION_GLOBALE",
+      "VALORISATION_TICKET_INVESTISSEMENT",
+      "TABLEAU_EMPLOIS_RESSOURCES_TABLE_CAPITALISATION",
+      "MECANISME_RENDEMENT",
+      "ANALYSE_SENSIBILITE_PERSPECTIVES_SORTIE",
+      "MODALITES_ESSENTIELLES_PACTE_SPA",
+      "SWOT_FORCES",
+      "SWOT_FAIBLESSES",
+      "SWOT_OPPORTUNITES",
+      "SWOT_MENACES",
+      "PRE_AUDIT_RSE"
+    ],
+    "total_variables": 19,
+    "last_updated": "2025-07-16"
+  }
+}
